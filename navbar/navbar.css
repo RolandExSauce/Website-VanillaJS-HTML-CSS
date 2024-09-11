@@ -1,0 +1,101 @@
+.nav-container {
+    background-color: #F0F8FF;
+}
+
+.nav-row {
+    width: 80%;
+    margin: auto;
+}
+
+.menu-btn-nav {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; /* Adjusted padding for better spacing */
+}
+
+.nav-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 100px; /* Set a maximum height to fit the navbar */
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    text-decoration: none; /* Ensure no underline */
+    color: #000; /* Adjust color as needed */
+}
+
+.nav-logo-img {
+    height: 60px; /* Adjust as needed */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+.slogan {
+    font-size: 14px; /* Adjust size as needed */
+    color: #555; /* Adjust color as needed */
+    margin: 3px 0px 5px 0px; /* Space between logo text and slogan */
+    align-self: flex-end; /* Aligns the slogan to the right within its container */
+    text-align: right; /* Aligns the slogan text to the right */
+}
+
+.navbar .nav-menu-items {
+    display: flex;
+}
+
+.nav-menu-items li {
+    list-style: none;
+}
+
+.nav-menu-items li a {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav-menu-items li a:hover {
+    color: blue;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu-items {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background-color: #252525;
+        transition: 0.5s all ease;
+        /* visibility: hidden; */
+        display: none;
+        align-items: center;
+        transform: translateX(-800px);
+        padding-top: 60px;
+    }
+
+    .nav-menu-items.show {
+        transform: translateX(0px);
+        transition: 0.5s all ease;
+    }
+
+    .nav-menu-items li a {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .menu-btn-nav {
+        display: block;
+        position: absolute;
+        color: white;
+        right: 30px;
+        font-size: 2rem;
+    }
+}

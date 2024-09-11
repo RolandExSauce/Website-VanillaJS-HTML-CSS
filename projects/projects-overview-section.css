@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+  }
+  
+  /* container *****************/
+  .two-column-projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* columns */
+  .two-column-projects-grid > * {
+    padding: 1rem;
+  }
+  
+  /* tablet breakpoint */
+  @media (max-width: 768px) {
+    .two-column-projects-grid {
+      display: block;
+    }
+  }
+  
+  /*********************************/
+  
+  /* dropdown panel */
+  .panel {
+    margin-top: 50px;
+    display: none;
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  .panel.show {
+    display: block;
+    height: auto; /* Set height to auto when panel is shown */
+  }
+  
+  .techDivRouterApp {
+    display: none;
+  }
+  
+  .techDivRouterApp.show {
+    display: block;
+    height: auto; /* Set height to auto when panel is shown */
+  }
+  
+  .rotate {
+    transform: rotate(180deg);
+  }
+  
+  .wrapper-router-app-icons {
+    margin: 70px 0px 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    grid-auto-rows: 100px;
+    text-align: center; /* Center the text and images */
+  }
+  
+  .wrapper-router-app-icons a {
+    text-decoration: none; /* Removes the underline */
+  }
+  
+  .wrapper-router-app-icons a:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+  }
+  
+  .icon {
+    vertical-align: middle;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+  
+  .wrapper-router-app-icons div {
+    margin-bottom: 20px; /* Add some space between the items */
+  }
+  
+  .wrapper-router-app-icons span {
+    display: block; /* Ensures the text is on a new line */
+    margin-top: 10px; /* Adds some space between the image and text */
+    font-size: 15px;
+  }
+  
+  h1 {
+    /* color: blue; */
+    font-size: 24px;
+    margin: 20px;
+    /* Add more styles as needed */
+  }
+  
+  h3 {
+    /* color: blue; */
+    font-size: 20px;
+    margin: 20px;
+    /* Add more styles as needed */
+  }
+  
+  .accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  
+  a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  video {
+    width: 65%;
+    height: auto;
+    display: block;
+    border: 0.5rem black;
+    border-radius: 30px;
+    margin: 50px 0px 0px 20px;
+    background-size: cover; /* Make the background image cover the entire video element */
+    background-position: center; /* Center the background image */
+  }
+  
+
+
+  .check-out-git {
+
+    text-align: center;
+    font-size: 2rem;
+  }
