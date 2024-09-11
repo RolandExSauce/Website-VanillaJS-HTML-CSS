@@ -16,6 +16,6 @@ If you still want to build your website with pure html/css and vanillaJS, then g
 - working with fetch API to load HTML files
 -  stuff like event listeners, query selectors, etc. for manipulating the DOM
 
-  that's basically it, the rest is basically just html and css
-  mjs is used so that we dont we can use ecmascript features like import, export, etc.
+  that's basically it, the rest is basically just html and css -
+  mjs is used so that we can use ecmascript features like import, export, etc.
   
